@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgba(255, 255, 254, 0.882); */
+
+}
+
+header{
+    width: 100%;
+    height: auto;
+}
+
+.navbar{
+    padding: 1% 2% 1% 1%;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    align-items: center;
+    background-color: rgba(255, 255, 254, 0.882);
+    /* background-color: black; */
+}
+
+.navbar ul{
+    list-style-type: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+}
+
+.navbar li a:hover{
+    color: red;
+}
+
+.wrapper_left{
+    display: flex;
+    height: auto;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_container{
+    width:30%;
+    /* get image resized */
+    background:url("img/surfsk8logo.webp") center center no-repeat;
+}
+
+.logo_container img{   
+    width: 100%;
+}
+
+body{
+    padding-bottom: 100px;
+    margin: 0 1% 0 1%;
+}
+
+.carousel{
+    position: relative;
+    /* Makes it so pictures same size */
+    height: 600px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    /* background-color: blue; */
+    
+}
+
+ .carousel_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.carousel_content_container{
+    position: relative;
+    height: 100%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+.carousel_content{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+
+.carousel_slide{
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel_button{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    /* transform: translateY(-50%); Move down 50% parent and move up 50% itself to center */
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel_button--left{
+    left: -2%;
+}
+
+.carousel_button i {
+    width: 30px;
+}
+
+.carousel_button--right{
+    right: -2%;
+
+}
+
+.carousel_nav{
+    /*for centering*/
+    display: flex;
+    justify-content: center;
+    padding: 1% 0;
+}
+
+.carousel_indicator{
+    border: 0;
+    border-radius: 50%; /*turns into circle*/
+    width: 15px;
+    height: 15px;
+    background: rgba(0,0,0,.3);
+    margin: 0 1%;
+    cursor: pointer;
+}
+
+.carousel_indicator.current-slide{
+    background: rgba(0,0,0,.75);
+}
+
+.carousel #mission{
+    width: 100%; 
+    height: 100%; 
+}
+
+.is-hidden {display: none;}
+
+
+section{
+    height: auto;
+    padding-bottom: 3em;
+    
+}
+
+.product{
+    text-align: center;
+}
+.product h1{
+    text-align: center;
+    font-size: 60pt;
+    width: 100%;
+    background-color:aliceblue ;
+}
+
+.product_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.item{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px dashed rgba(137, 134, 134, 0.629);
+    background-color:aliceblue;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: 0.2s ease;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02)   
+}
+
+.item :hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06)
+}
+
+.item img{
+    width:100%;
+    border-radius: 20px;
+}
+
+#banner{
+    height: auto;
+    text-align: center;
+    background-color: purple;
+    padding-bottom: 2rem;
+}
+
+#banner h4{
+    background-color: purple;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+#banner button{
+    border: none;
+    border-radius: 2px;
+    background: lightblue;
+    width: 150px;
+}
+
+#banner button:hover{
+    background: rgb(17, 145, 159)
+}
+
+
+/* good for getting footer stuck to bottom */
+.footer_container{
+    position: relative;
+}
+
+footer{
+    width:100%;
+    height: 14%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 2% 0 1%;
+    background-color: black;
+    /* color: red; */
+}
+
+footer .footer_col, 
+.footer_col p, 
+.footer_col h4, 
+.footer_col i,
+.footer_col a,
+.footer_col strong {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1%;
+}
+
+footer .copyright, .copyright p{
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: .5em;
+    text-align: center;
+}
+
+footer .footer_col.pay{
+    align-items: center;
+}
+
+.pay_icons{
+    display: flex;
+    flex-direction: column;
+}
